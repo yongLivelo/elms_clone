@@ -1,6 +1,7 @@
 <script>
-	import { fade, blur, fly, slide, scale } from 'svelte/transition';
-	import { quintOut } from 'svelte/easing';
+	import { fade, blur, fly, scale } from 'svelte/transition';
+	import { slide } from 'svelte/transition';
+
 	import image1 from './images/image-1.jpg';
 	import image2 from './images/image-2.jpg';
 	import image3 from './images/image-3.jpg';
@@ -56,7 +57,7 @@
 
 	let hover = false;
 </script>
-
+hi
 <div
 	on:mouseenter={() => {
 		hover = true;
@@ -70,7 +71,7 @@
 		<div transition:fade={{ duration: 600 }}>
 			<img src={imageDisplay} alt="" />
 			{#if i == 1}
-				<div class="text">
+				<div transition:fadeSlide={{duration: 1000}} class="text">
 					<h1>Online Registration</h1>
 					<p>
 						We warmly welcome high school graduates, college transferees, second coursers, foreign
