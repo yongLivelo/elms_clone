@@ -57,7 +57,7 @@
 
 	let hover = false;
 </script>
-hi
+<!-- fix -->
 <div
 	on:mouseenter={() => {
 		hover = true;
@@ -71,7 +71,7 @@ hi
 		<div transition:fade={{ duration: 600 }}>
 			<img src={imageDisplay} alt="" />
 			{#if i == 1}
-				<div transition:fadeSlide={{duration: 1000}} class="text">
+				<div class="text">
 					<h1>Online Registration</h1>
 					<p>
 						We warmly welcome high school graduates, college transferees, second coursers, foreign
