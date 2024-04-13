@@ -45,10 +45,12 @@
 			mControl = pause;
 			clearInterval(timer);
 			state = false;
+			console.log("stop");
 		} else {
 			mControl = resume;
 			timer = setInterval(changeImage, 5000);
 			state = true;
+			console.log("resume");
 		}
 	};
 
@@ -91,7 +93,7 @@
 
 <style lang="scss">
 	
-	$primary-color: #0C3057;
+$primary-color: #0C3057;
 $secondary-color: #3983d2;
 $text-color-1: black;
 $text-color-2: white;
