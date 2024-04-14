@@ -1,6 +1,10 @@
 <script>
 	import { fade, blur, fly, scale } from 'svelte/transition';
-	import { slide } from 'svelte/transition';
+
+	
+	let visible = true;
+
+
 
 	import image1 from './images/image-1.jpg';
 	import image2 from './images/image-2.jpg';
@@ -68,21 +72,21 @@
 	class="slider"
 >
 	{#key imageDisplay}
+
 		<div transition:fade={{ duration: 600 }}>
 			<img src={imageDisplay} alt="" />
-			{#if i == 1}
-				<div class="text">
-					<h1>Online Registration</h1>
-					<p>
-						We warmly welcome high school graduates, college transferees, second coursers, foreign
-						applicants, and graduate program applicants to our campuses.
-					</p>
-					<a class="button" href="https://www.sti.edu/admissions_registration.asp">Register now</a>
-				</div>
-			{/if}
 		</div>
 	{/key}
-
+	{#if i == 1}
+	<div transition:fly={{ x: '-100'}} class="text">
+		<h1>Online Registration</h1>
+		<p>
+			We warmly welcome high school graduates, college transferees, second coursers, foreign
+			applicants, and graduate program applicants to our campuses.
+		</p>
+		<a class="button" href="https://www.sti.edu/admissions_registration.asp">Register now</a>
+	</div>
+{/if}
 	{#if hover}
 		<div class="controls">
 			<div on:click={() => goDirection('left')}><img src={left} alt="ASD" /></div>
