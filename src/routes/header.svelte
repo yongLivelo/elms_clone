@@ -44,8 +44,7 @@ a{
 	}
 
 	.sti {
-		@media only screen and (min-width: 768px) {
-		}
+	
 
 		padding: 0 30px;
 		display: flex;
@@ -66,6 +65,8 @@ a{
 			color: $secondary-color;
 		}
 	}
+
+
 
 	nav {
 		padding: 0 40px;
@@ -100,4 +101,15 @@ a{
 			background-color: rgb(232, 232, 232);
 		}
 	}
+
+	@media only screen and (max-width: 600px) {
+
+	.sti {
+		.text {
+			display: none;
+		}
+	}
+	
+	
+}
 </style>
