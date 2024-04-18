@@ -47,7 +47,7 @@ a{
 	
 		:hover {
 			.text {
-				color: $secondary-color;
+				color: red;
 			}
 		}
 
