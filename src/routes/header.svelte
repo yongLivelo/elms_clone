@@ -8,7 +8,6 @@
 		<a href=""><div class="text">STI Education Services Group</div></a>
 	</div>
 	<nav>
-		<a href="">test</a>
 		<a class="helpdesk" href="https://helpdesk.sti.edu/User/Login?ReturnUrl=%2f">Campus Helpdesk</a>
 
 		<a class="faq" href="https://elms.sti.edu/page/show/495374">FAQ</a>
