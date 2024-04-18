@@ -45,6 +45,11 @@ a{
 
 	.sti {
 	
+		:hover {
+			.text {
+				color: $secondary-color;
+			}
+		}
 
 		padding: 0 30px;
 		display: flex;
@@ -62,10 +67,11 @@ a{
 		}
 
 		.text:hover {
-			color: $secondary-color;
+			
 		}
 	}
 
+	
 
 
 	nav {
